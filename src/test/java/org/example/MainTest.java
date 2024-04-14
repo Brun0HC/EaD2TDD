@@ -33,7 +33,7 @@ class MainTest {
         int paginaLargura = 5;
         int fotoAltura = 4;
         int fotoLargura = 3;
-        assertThat(fotoAltura <= paginaLargura && fotoLargura <= paginaAltura).isTrue();
+        assertThat(fotoAltura+fotoLargura <= paginaLargura || fotoAltura+fotoLargura <= paginaAltura).isTrue();
     }
 
 }
